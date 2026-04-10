@@ -16,6 +16,10 @@ sudo yuki update
 gcc yuki.c -o yuki
 sudo mv yuki /usr/local/bin/
 ```
+### or
+```sh
+make install
+```
 
 ## commands
 
