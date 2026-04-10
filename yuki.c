@@ -14,7 +14,14 @@ struct Command commands[] = {
     {"install", "pacman -S %s", 1},
     {"remove", "pacman -Rns %s", 1},
     {"search", "pacman -Ss %s", 1},
-    {"update", "pacman -Syu", 0}
+    {"update", "pacman -Syu", 0},
+    {"info", "pacman -Si %s", 1},
+    {"info-local", "pacman -Qi %s", 1},
+    {"list", "pacman -Q", 0},
+    {"list-search", "pacman -Qs %s", 1},
+    {"orphans", "pacman -Qdt", 0},
+    {"clean", "pacman -Sc", 0},
+    {"sync", "pacman -Syy", 0}
 
 };
 
