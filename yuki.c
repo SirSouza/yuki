@@ -22,7 +22,7 @@ struct Command commands[] = {
     {"remove-orphans", "pacman -Rns $(pacman -Qdtq)", 0},
     {"clean-cache",       "pacman -Sc", 0},
     {"sync",        "pacman -Syyu", 0}
-};s
+};
 
 int main(int argc, char *argv[])
 {
